@@ -16,7 +16,7 @@ If you wish to change the Database configurations then you can pass these as NOD
 # Add Sample Data
  Here {{base_url}} is default "http://localhost:3000" 
 
-- {{base_url}}/books/load-author-data/
-- {{base_url}}/books/load-publisher-data/
-- {{base_url}}/books/load-book-data/
-- {{base_url}}/books/load-user-data/
+- {{base_url}}/data/author-data/
+- {{base_url}}/data/publisher-data/
+- {{base_url}}/data/book-data/
+- {{base_url}}/data/user-data/

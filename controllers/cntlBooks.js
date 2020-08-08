@@ -196,7 +196,7 @@ module.exports = class Books {
                         });
                     } else if (userOrders && userOrders.length) {
                         statusCode = 202
-                        let error = `This book has already been assigned to user!`;
+                        let error = `This book has already been assigned to this user!`;
                         stack_order = userOrders;
                         throw error;
                     } else {

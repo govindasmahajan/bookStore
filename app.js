@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
+var sampleDataRouter = require('./routes/load_sample_data');
 var usersRouter = require('./routes/users');
 var booksRouter = require('./routes/book_store');
 
@@ -37,16 +38,17 @@ app.use(express.urlencoded({
 }));
 app.use(cookieParser());
 
-/* {force:true} : Drops all database tables & picks from models again */
+/* {force:true} : Drops all database tables & creates new tables*/
 /* Strictly to be used in DEVELOPMENT MODE ONLY */
 
-/* dbSequalize.sequelizeConn.sync({force:true}); */
+/* dbSequalize.sequelizeConn.sync({ force: true }); */
 
 dbSequalize.sequelizeConn.sync();
 
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/data', sampleDataRouter);
 app.use('/users', usersRouter);
 app.use('/books', booksRouter);
 
