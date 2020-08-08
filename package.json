@@ -1,0 +1,44 @@
+{
+  "name": "BookStore_BE",
+  "version": "0.5.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "csvtojson": "^2.0.10",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "fs": "0.0.1-security",
+    "hbs": "^4.1.1",
+    "helmet": "^3.22.0",
+    "http-errors": "~1.6.3",
+    "https": "^1.0.0",
+    "https-localhost": "^4.5.3",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.19",
+    "moment": "^2.27.0",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5",
+    "sequelize": "^5.21.6",
+    "serve-favicon": "^2.5.0",
+    "step": "^1.0.0",
+    "swagger-jsdoc": "^3.4.0",
+    "swagger-model-validator": "^3.0.11",
+    "swagger-ui-express": "^4.1.0",
+    "underscore": "^1.9.1",
+    "uuid": "^3.3.3",
+    "uuidv4": "^6.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

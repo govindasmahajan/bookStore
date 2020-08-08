@@ -1,0 +1,21 @@
+book_id,author_id,publisher_id,title,isbn,genre,edition,price,quantity,image_url
+1,5,5,The Prince,147819464-2,Action|Thriller,2008,78.66,4,https://image.shutterstock.com/image-vector/crash-test-dummy-pop-art-600w-391535671.jpg
+2,5,2,Reel Injun,478391659-4,Documentary,1983,46.48,1,https://image.shutterstock.com/image-vector/sketch-notebook-vector-illustration-hand-600w-133257518.jpg
+3,3,5,"Pig's Tale, A",338826308-6,Adventure|Comedy|Drama|Romance,2000,62.13,5,https://image.shutterstock.com/image-vector/crash-test-dummy-pop-art-600w-391535671.jpg
+4,1,3,"Year of the Yao, The",025663090-9,Documentary,2009,27.08,5,https://image.shutterstock.com/image-vector/crash-test-dummy-pop-art-600w-391535671.jpg
+5,2,4,Black Book (Zwartboek),192684001-1,Drama|Thriller|War,2005,89.28,4,https://image.shutterstock.com/image-vector/crash-test-dummy-pop-art-600w-391535671.jpg
+6,5,2,Donkey Xote,477417981-7,Animation,1985,25.54,1,https://image.shutterstock.com/image-vector/crash-test-dummy-pop-art-600w-391535671.jpg
+7,2,4,Movie Movie,281609426-X,Comedy|Musical,2011,79.29,2,https://image.shutterstock.com/image-vector/sketch-notebook-vector-illustration-hand-600w-133257518.jpg
+8,2,5,Bernice Bobs Her Hair,806514537-X,Comedy|Drama,2005,93.16,2,https://image.shutterstock.com/image-vector/crash-test-dummy-pop-art-600w-391535671.jpg
+9,5,4,Belphecor: Curse of the Mummy (Belphégor - Le fantôme du Louvre),908017567-6,Fantasy|Horror|Mystery,2011,34.75,1,http://dummyimage.com/250x250.jpg/dddddd/000000
+10,4,3,MURDER and murder,839395351-0,Crime|Drama|Mystery,2009,74.46,4,https://image.shutterstock.com/image-vector/crash-test-dummy-pop-art-600w-391535671.jpg
+11,3,1,Ringers: Lord of the Fans,560796709-3,Comedy|Documentary,2006,1.92,2,http://dummyimage.com/250x250.jpg/dddddd/000000
+12,2,4,Jarhead,778713629-4,Action|Drama|War,1999,12.6,5,http://dummyimage.com/250x250.jpg/dddddd/000000
+13,1,4,"Jeffrey Dahmer Files, The",580838041-3,Crime|Documentary,1994,22.03,1,https://image.shutterstock.com/image-vector/crash-test-dummy-pop-art-600w-391535671.jpg
+14,4,5,Cartoon All-Stars to the Rescue,105066570-8,Animation|Children|Comedy|Drama|Fantasy,2008,26.87,1,https://image.shutterstock.com/image-vector/crash-test-dummy-pop-art-600w-391535671.jpg
+15,3,3,Cattle Queen of Montana,053607727-4,Western,1994,23.42,2,https://image.shutterstock.com/image-vector/crash-test-dummy-pop-art-600w-391535671.jpg
+16,1,2,Gross Anatomy (a.k.a. A Cut Above),817684919-7,Comedy|Drama,1965,81.27,4,https://image.shutterstock.com/image-vector/crash-test-dummy-pop-art-600w-391535671.jpg
+17,5,3,Detachment,868898220-1,Drama,1998,63.03,3,https://image.shutterstock.com/image-vector/crash-test-dummy-pop-art-600w-391535671.jpg
+18,4,4,Manslaughter,650060618-3,Drama,2009,46.61,1,https://image.shutterstock.com/image-vector/sketch-notebook-vector-illustration-hand-600w-133257518.jpg
+19,1,2,Allan Quatermain and the Temple of Skulls,599229385-X,Action|Adventure,2006,11.76,3,http://dummyimage.com/250x250.jpg/dddddd/000000
+20,2,5,Living with Michael Jackson,389040056-6,Documentary,2006,78.74,2,https://image.shutterstock.com/image-vector/crash-test-dummy-pop-art-600w-391535671.jpg
