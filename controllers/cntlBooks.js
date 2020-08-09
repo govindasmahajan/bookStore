@@ -133,6 +133,52 @@ module.exports = class Books {
         }
     }
 
+    getBookOrdersById(req, res, next) {
+        let self = this;
+        let statusCode = 400;
+        let _body = req.body;
+
+        if (_body && _body.book_id) {
+            Step(
+
+                function _getordersByBookId() {
+                    self.ordersByBookId(_body, this);
+                },
+
+                function _sendResponse(err, orders) {
+                    if (err) {
+                        res.status(statusCode).send({
+                            "status": false,
+                            "message": null,
+                            "error": err,
+                            "response": null
+                        });
+                    } else if (!orders) {
+                        return res.status(202).send({
+                            "status": true,
+                            "message": 'Book has no orders as of now!',
+                            "error": null,
+                            "response": null
+                        });
+                    } else {
+                        return res.status(200).send({
+                            "status": true,
+                            "message": 'success',
+                            "error": null,
+                            "response": orders
+                        });
+                    }
+                }
+            );
+        } else {
+            res.status(400).send({
+                "status": false,
+                "message": "Required field(s) missing in request body.",
+                "response": null,
+                "authorized": false
+            });
+        }
+    }
     async getBookById(_id, cb) {
         try {
             let book = await Book.findOne({
@@ -260,6 +306,34 @@ module.exports = class Books {
             return cb(err, null)
         }
     }
+    async ordersByBookId(body, cb) {
+        try {
+            let orders = await Orders.findAll({
+                raw: true,
+                where: {
+                    book_id: body.book_id,
+                    status: 1
+                },
+                include: [
+                    {
+                        model: Book,
+                        as: 'book',
+                        required: false
+                    },
+                    {
+                        model: Users,
+                        as: 'user',
+                        required: false
+                    }
+                ]
+            })
+            return cb(null, orders);
+        } catch (err) {
+            console.error(err);
+            return cb(err, null)
+        }
+    }
+
     async activeOrdersByBookId(body, cb) {
         try {
             let orders = await Orders.findAll({
