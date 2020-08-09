@@ -6,7 +6,7 @@ Sample Backend service for library or bookstore to lend books to it's users.
 2. npm i
 3. start the app : npm run start 
 
-If you wish to change the Database configurations then you can pass these as NODE_ENV while starting the application : 
+If you wish to change the Database configurations then you can pass the below params while running the application : 
 - DB_USER="root" DB_PWD="password@123" DB_NAME="book_store" npm run start
 				
 
@@ -25,4 +25,5 @@ If you wish to change the Database configurations then you can pass these as NOD
 - Issue a book to specific user : http://localhost:3000/books/order-book/
 - Book details with available quantity : http://localhost:3000/books/book-details
 - Return a book & make available for reissue to other users : http://localhost:3000/books/return-book/2
+- List of orders by BookID : http://localhost:3000/books/book-orders
 - Get all order from last 30 days : http://localhost:3000/books/order-history
