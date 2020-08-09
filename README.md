@@ -11,18 +11,18 @@ If you wish to change the Database configurations then you can pass these as NOD
 				
 
 # Add Sample Data
- Here {{base_url}} is default "http://localhost:3000" 
+ Below are GET API Calls to load sample data for the application :
 
-- {{base_url}}/data/author-data/
-- {{base_url}}/data/publisher-data/
-- {{base_url}}/data/book-data/
-- {{base_url}}/data/user-data/
+- http://localhost:3000/data/author-data/
+- http://localhost:3000/data/publisher-data/
+- http://localhost:3000/data/book-data/
+- http://localhost:3000/data/user-data/
 
 # API Details
 
-- List of Users : {{base_url}}/users/get-users/
-- List of all books : {{base_url}}/books/get-books/
-- Issue a book to specific user : {{base_url}}/books/order-book/
-- Book details with available quantity : {{base_url}}/books/book-details
-- Return a book & make available for reissue to other users : {{base_url}}/books/return-book/2
-- Get all order from last 30 days : {{base_url}}/books/order-history
+- List of Users : http://localhost:3000/users/get-users/
+- List of all books : http://localhost:3000/books/get-books/
+- Issue a book to specific user : http://localhost:3000/books/order-book/
+- Book details with available quantity : http://localhost:3000/books/book-details
+- Return a book & make available for reissue to other users : http://localhost:3000/books/return-book/2
+- Get all order from last 30 days : http://localhost:3000/books/order-history
